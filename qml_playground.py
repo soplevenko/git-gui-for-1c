@@ -1,6 +1,6 @@
 """
 QML playground louncher.
-Simple script QML file test lounch purpose.
+Simple script for QML file test lounch purpose.
 """
 
 import sys
@@ -14,7 +14,6 @@ if __name__ == "__main__":
     app = QGuiApplication(sys.argv)
     engine = QQmlApplicationEngine()
 
-    #engine.load(QUrl("QML/main.qml"))
     engine.load(get_qml_qurl("main.qml"))
 
     engine.rootObjects()[0].show()
